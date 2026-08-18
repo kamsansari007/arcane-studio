@@ -1,0 +1,27 @@
+.experience-contact {
+  background: linear-gradient(160deg, #0c1520 0%, #05070a 100%);
+  padding: var(--space-70) 0;
+  text-align: center;
+}
+
+.experience-contact__inner {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.experience-contact h2 {
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.experience-contact p {
+  color: var(--color-fg-on-dark-muted);
+}
+
+.experience-contact a {
+  color: var(--color-white);
+  text-decoration: underline;
+}

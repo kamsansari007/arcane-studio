@@ -1,0 +1,25 @@
+.secondment__title {
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.secondment__text {
+  color: var(--color-fg-on-dark-muted);
+  margin-bottom: var(--space-50);
+}
+
+.secondment__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.secondment__grid + .secondment__grid {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 782px) {
+  .secondment__grid {
+    grid-template-columns: 1fr;
+  }
+}

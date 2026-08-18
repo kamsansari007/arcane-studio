@@ -1,0 +1,15 @@
+.world-class {
+  padding-bottom: 0;
+}
+
+.world-class__title {
+  text-align: center;
+  color: var(--color-white);
+  margin-bottom: var(--space-30);
+}
+
+.world-class__text {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: var(--color-fg-on-dark-muted);
+}

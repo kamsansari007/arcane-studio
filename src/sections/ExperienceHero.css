@@ -1,0 +1,46 @@
+.experience-hero {
+  background: linear-gradient(160deg, #0c1520 0%, #05070a 100%);
+  padding: var(--space-60) 0;
+}
+
+.experience-hero h1 {
+  color: var(--color-white);
+  margin-bottom: var(--space-40);
+}
+
+.experience-hero__media {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.experience-hero__media img {
+  width: 100%;
+  max-height: 720px;
+  object-fit: cover;
+}
+
+.experience-hero__overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: var(--space-40);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-30);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.35) 55%, transparent 100%);
+}
+
+.experience-hero__overlay p {
+  color: var(--color-white);
+  max-width: 480px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 782px) {
+  .experience-hero__media img {
+    max-height: 480px;
+  }
+}

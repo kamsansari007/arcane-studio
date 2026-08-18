@@ -1,0 +1,22 @@
+.highlighted-intro {
+  background: linear-gradient(160deg, #0c1520 0%, #05070a 100%);
+  padding: var(--space-60) 0 var(--space-50);
+  text-align: center;
+}
+
+.highlighted-intro h2 {
+  color: var(--color-white);
+  margin-bottom: var(--space-30);
+}
+
+.highlighted-intro__lead {
+  color: var(--color-white);
+  font-size: 1.1rem;
+  margin: 0 auto 1.25rem;
+}
+
+.highlighted-intro__text {
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--color-fg-on-dark-muted);
+}
