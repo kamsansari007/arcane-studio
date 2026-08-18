@@ -1,0 +1,102 @@
+.contact-hero {
+  background: linear-gradient(100deg, #07212e 0%, #041017 55%, #01070a 100%);
+  padding: var(--space-70) 0;
+  text-align: center;
+}
+
+.contact-hero__content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.contact-hero__content h1 {
+  color: var(--color-white);
+  margin-bottom: var(--space-30);
+}
+
+.contact-hero__content p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+}
+
+.contact-hero__content a {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+.contact-hero__channels {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: var(--space-40) 0;
+  flex-wrap: wrap;
+}
+
+.contact-hero__channel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-hero__channel:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-white);
+}
+
+.contact-hero__address {
+  margin-top: var(--space-40);
+  margin-bottom: 0.5rem;
+}
+
+.contact-hero__phone {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.contact-region {
+  padding-bottom: var(--space-40);
+}
+
+.contact-region h2 {
+  color: var(--color-black);
+}
+
+.contact-maps {
+  background-color: #e5e3df;
+  padding-bottom: var(--space-60);
+}
+
+.contact-maps__primary {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-30);
+}
+
+.contact-maps__row {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-30);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  margin-top: 2px;
+}
+
+@media (max-width: 782px) {
+  .contact-maps__row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-hero__channels {
+    flex-direction: column;
+    align-items: center;
+  }
+}
