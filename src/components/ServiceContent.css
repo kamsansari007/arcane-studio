@@ -1,0 +1,118 @@
+.service-intro {
+  padding-bottom: 0;
+}
+
+.service-intro p {
+  color: var(--color-fg-on-light-muted);
+  max-width: 1100px;
+  margin-bottom: 1.25rem;
+}
+
+.service-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.service-images {
+  padding: var(--space-50) 0;
+}
+
+.service-images__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.service-images__grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.service-workflow {
+  padding-top: 0;
+}
+
+.service-workflow__title {
+  color: var(--color-black);
+  margin-bottom: var(--space-50);
+  text-align: center;
+}
+
+.service-workflow__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.workflow-card {
+  background: linear-gradient(160deg, #0d3049 0%, #05131f 100%);
+  border-radius: 1.25rem;
+  padding: var(--space-40);
+}
+
+.workflow-card h3 {
+  color: var(--color-white);
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+}
+
+.workflow-card p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1rem;
+}
+
+.workflow-card p:last-child {
+  margin-bottom: 0;
+}
+
+.service-deliverables__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-50);
+  align-items: center;
+}
+
+.service-deliverables__grid h2 {
+  color: var(--color-black);
+  margin-bottom: var(--space-40);
+}
+
+.service-deliverables__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.service-deliverables__item h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 0.4rem;
+}
+
+.service-deliverables__item p {
+  color: var(--color-fg-on-light-muted);
+}
+
+.service-deliverables__image img {
+  width: 100%;
+  aspect-ratio: 4 / 3.4;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media (max-width: 900px) {
+  .service-images__grid,
+  .service-workflow__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-deliverables__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-deliverables__image {
+    order: -1;
+  }
+}

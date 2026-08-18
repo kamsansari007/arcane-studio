@@ -1,0 +1,40 @@
+.service-hero {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.service-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(20, 22, 26, 0.65);
+  backdrop-filter: grayscale(0.4);
+}
+
+.service-hero__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-40);
+  text-align: center;
+}
+
+.service-hero__content h1 {
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: var(--fs-x-large);
+  max-width: 900px;
+}
+
+@media (max-width: 782px) {
+  .service-hero {
+    min-height: 340px;
+  }
+}

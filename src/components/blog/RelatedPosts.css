@@ -1,0 +1,22 @@
+.related-posts {
+  padding: var(--space-60) 0 var(--space-40);
+  border-top: 1px solid var(--color-border-dark);
+  margin-top: var(--space-50);
+}
+
+.related-posts h2 {
+  color: var(--color-white);
+  margin-bottom: var(--space-40);
+}
+
+.related-posts__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .related-posts__grid {
+    grid-template-columns: 1fr;
+  }
+}
