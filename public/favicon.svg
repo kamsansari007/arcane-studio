@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="fav-spark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 2 L59.6 17.5 L59.6 48.5 L32 64 L4.4 48.5 L4.4 17.5 Z"
+        fill="#0b0b0b" stroke="url(#fav-spark)" stroke-width="3"/>
+  <path d="M32 15 L40.5 28 L32 51 L23.5 28 Z" fill="url(#fav-spark)"/>
+  <path d="M32 15 L34.8 26 L46 28 L34.8 30 L32 41 L29.2 30 L18 28 L29.2 26 Z"
+        fill="#ffffff" opacity="0.92"/>
+</svg>
